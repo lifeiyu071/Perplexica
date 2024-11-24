@@ -13,7 +13,7 @@ import {
   PopoverPanel,
   Transition,
 } from '@headlessui/react';
-import { SiReddit, SiYoutube } from '@icons-pack/react-simple-icons';
+import { SiReddit, SiStackoverflow, SiYoutube } from '@icons-pack/react-simple-icons';
 import { Fragment } from 'react';
 
 const focusModes = [
@@ -59,6 +59,18 @@ const focusModes = [
     description: 'Search for discussions and opinions',
     icon: (
       <SiReddit
+        className="h-5 w-auto mr-0.5"
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      />
+    ),
+  },
+  {
+    key: 'stackoverflowSearch',
+    title: 'Stackoverflow',
+    description: 'Search for Stackoverflow',
+    icon: (
+      <SiStackoverflow
         className="h-5 w-auto mr-0.5"
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}
